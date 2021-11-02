@@ -6,7 +6,7 @@
   "author": "brunno.borges <brunno.borges@germinare.org.br>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon src/server.js"
+    "start": "nodemon ./index.js localhost 3000"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
