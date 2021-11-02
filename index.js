@@ -23,12 +23,15 @@ app.use(express.json());
 
 const DB_USER = 'obrunnodiego'
 const DB_PASSWORD = encodeURIComponent('original20')
+const PORT = process.env.PORT || 3000;
+
 
 mongoose
 .connect(`mongodb+srv://${DB_USER}:${DB_PASSWORD}@curriculoweb.iyzix.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`)
 .then(() => {
     console.log('Conectamos ao Mongo')
-    app.listen(80);
+    app.listen(PORT);
+    console.log('PORTA UTILIZADA', PORT);
 })
 .catch((err) => {
     console.log(err)
