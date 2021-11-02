@@ -28,7 +28,7 @@ mongoose
 .connect(`mongodb+srv://${DB_USER}:${DB_PASSWORD}@curriculoweb.iyzix.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`)
 .then(() => {
     console.log('Conectamos ao Mongo')
-    app.listen(3000);
+    app.listen(80);
 })
 .catch((err) => {
     console.log(err)

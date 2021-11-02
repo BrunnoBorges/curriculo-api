@@ -6,7 +6,7 @@
   "author": "brunno.borges <brunno.borges@germinare.org.br>",
   "license": "MIT",
   "scripts": {
-    "start": "node ./index.js",
+    "start": "node ./index.js localhost 80",
     "dev": "nodemon ./index.js localhost 3000"
   },
   "dependencies": {
