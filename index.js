@@ -1,12 +1,14 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 const homeRoutes = require('./src/routes/homeRoutes');
 const coursesRoutes = require('./src/routes/coursesRoutes');
 const experienceRoutes = require('./src/routes/experienceRoutes');
 const professionalRoutes = require('./src/routes/professionalRoutes');
 
+app.use(cors());
 app.use('/home', homeRoutes);
 app.use('/cursos', coursesRoutes);
 app.use('/experiencia', experienceRoutes );
