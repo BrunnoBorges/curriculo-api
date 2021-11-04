@@ -7,12 +7,14 @@ const homeRoutes = require('./src/routes/homeRoutes');
 const coursesRoutes = require('./src/routes/coursesRoutes');
 const experienceRoutes = require('./src/routes/experienceRoutes');
 const professionalRoutes = require('./src/routes/professionalRoutes');
+const midiasRoutes = require('./src/routes/midiasRoutes');
 
 app.use(cors());
 app.use('/home', homeRoutes);
 app.use('/cursos', coursesRoutes);
 app.use('/experiencia', experienceRoutes );
 app.use('/profissional', professionalRoutes );
+app.use('/midias', midiasRoutes );
 
 
 app.use(
@@ -38,8 +40,4 @@ mongoose
 .catch((err) => {
     console.log(err)
 })
-
-
-
-// module.exports = app;
 
